@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(14, 14, 14);
+    font-family: 'Nunito';
+    color: #f9fafb;
+    line-height: 1.6; 
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index:1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    background-color: rgb(14, 14, 14);
+    border-bottom: 1px solid #374151;
+    height: 60px;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap:25px;
+}
+
+.menu a{
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    color: #d1d5db;
+}
+
+.menu a:hover{
+    color: #f01ae1;
+}
+
+.connect{
+    display: flex;
+    align-items: center;
+    background-color: #27242a;
+    color: #d1d5db;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size:14px;
+    letter-spacing: 1px;
+    font-family: 'Nunito';
+    transition: 0.3s;
+}
+
+.connect:hover{
+    background-color: #f9fafb;
+    color:black;
+    transform: translateY(-1px);
+}
+
+.connect i {
+    margin-right: 10px;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto 40px auto;
+    
+}
+
+.banniere{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banniere h1{
+    font-size:38px;
+    color:#f9fafb;
+    margin-bottom: 15px;
+
+}
+
+.banniere p{
+    font-size: 16px;
+    color: #d1d5db;
+    margin-bottom: 25px;
+}
+
+.recherche{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.recherche input{
+    width: 350px;
+    max-width: 100%;
+    padding: 14px;
+    border:none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Nunito';
+    background-color: #27242a;
+
+}
+
+.recherche input::placeholder{
+    color: #9ca3af;
+}
+
+.recherche a{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f01ae1;
+    color: #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.recherche a:hover {
+    background-color:  #d1d5db;
+    color:#f01ae1;
+}
+
+.populaire h2, .comedie h2, .fantastique h2, .netflix h2{
+    font-size: 28px;
+    color: #f9fafb;
+    margin-bottom: 20px;
+}
+
+.populaire-grille, .comedie-grille, .fantastique-grille, .netflix-grille{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.populaire-affiche, .comedie-affiche, .fantastique-affiche, .netflix-affiche{
+  background-color: #27242a;
+  border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.populaire-affiche:hover, .comedie-affiche:hover, .fantastique-affiche:hover, .netflix-affiche:hover{
+    transform: translateY(-5px);
+}
+
+.populaire-affiche img, .comedie-affiche img, .fantastique-affiche img, .netflix-affiche img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.populaire-affiche h3, .comedie-affiche h3, .fantastique-affiche h3, .netflix-affiche h3{
+  font-size: 20px;
+  margin: 15px 15px 8px;
+}
+
+.populaire-affiche p, .comedie-affiche p, .netflix-affiche p{
+  font-size: 15px;
+  color: #d1d5db;
+  margin: 0 15px;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 15px;
+  margin-top: 50px;
+  background-color: rgb(14, 14, 14);
+  border-top: 1px solid #374151;
+  color: #d1d5db;
+}
+
+footer p{
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height:auto;
+        padding:15px 8%;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .banniere h1 {
+        font-size: 30px;
+    }
+
+    .banniere p {
+        font-size: 16px;
+    }
+
+    .recherche {
+        flex-direction: column;
+    }
+
+    .recherche input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .recherche a,
+    .recherche button {
+        width: 100%;
+        max-width: 400px;
+        height: 50px;
+    }
+}
