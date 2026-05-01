@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/main.js" defer></script>
-    <script type="module" src="js/films.js" defer></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/main.js" defer></script>
+    <script type="module" src="../js/films.js" defer></script>
+    <script type="module" src="../js/all-films.js" defer></script>
     <title>Tous les films - MovieFinder</title>
 
 </head>
@@ -14,7 +15,7 @@
 <body>
     <header class="header">
         <a href="index.html" class="logo">
-            <img src="images/movie-or.png" alt="MovieFinder">
+            <img src="../images/movie-or.png" alt="MovieFinder">
         </a>
 
         <nav class="menu">
@@ -45,10 +46,10 @@
                     Se connecter
                 </a>
 
-                <a href="logout.html">
+                <button id="logout-btn" type="button">
                     <i class="fa-solid fa-right-from-bracket"></i>
                     Se déconnecter
-                </a>
+                </button>
             </div>
         </div>
     </header>
@@ -59,9 +60,9 @@
             <p>Recherchez un film par son titre et consultez ses informations.</p>
 
             <div class="search-box">
-                <input id="search-input" type="text" placeholder="Tapez le nom d'un film...">
+                <input id="all-films-search-input" type="text" placeholder="Tapez le nom d'un film...">
 
-                <button id="search-btn" type="button">
+                <button id="all-films-search-btn" type="button">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
@@ -73,7 +74,7 @@
                 <p id="search-feedback">Lancez une recherche pour afficher des films.</p>
             </div>
 
-            <div id="results" class="movie-grid"></div>
+            <div id="movies-results" class="movie-grid"></div>
         </section>
     </main>
 

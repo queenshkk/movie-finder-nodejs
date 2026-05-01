@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import usersRoutes from "./routes/users.routes.js";
 import authRoutes from "./routes/auth.routes.js";
 import favoritesRoutes from "./routes/favorites.routes.js";
+import moviesRoutes from "./routes/movies.routes.js";
 import errorMiddleware from "./middlewares/error.middleware.js";
 
 dotenv.config();
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use("/api/users", usersRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/favorites", favoritesRoutes);
+app.use("/api/movies", moviesRoutes);
 
 // Route pour chercher un film avec l'API Movie of the Night
 app.post("/api/motn", async (req, res, next) => {

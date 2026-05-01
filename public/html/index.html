@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/main.js" defer></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/main.js" defer></script>
     <title>MovieFinder - Accueil</title>
 </head>
 
 <body>
     <header class="header">
         <a href="index.html" class="logo">
-            <img src="images/movie-or.png" alt="MovieFinder">
+            <img src="../images/movie-or.png" alt="MovieFinder">
         </a>
 
         <nav class="menu">
@@ -47,10 +47,10 @@
                     Se connecter
                 </a>
 
-                <a href="logout.html">
+                <button id="logout-btn" type="button">
                     <i class="fa-solid fa-right-from-bracket"></i>
                     Se déconnecter
-                </a>
+                </button>
             </div>
         </div>
     </header>
@@ -101,51 +101,8 @@
                 <p>Une sélection de films à découvrir sur différentes plateformes.</p> 
            </div>
 
-            <div class="movie-grid">
-                <article class="movie-card">
-                    <a href="film.html?title=Harry%20Potter">
-                        <img src="images/harry-potter.jpg" alt="Harry Potter">
-                    </a>
-
-                    <div class="movie-card-content">
-                        <h3>Harry Potter</h3>
-                        <p>Fantastique</p>
-                    </div>
-                </article>
-
-                <article class="movie-card">
-                    <a href="film.html?title=Aladdin">
-                        <img src="images/aladdin.jpg" alt="Aladdin">
-                    </a>
-
-                    <div class="movie-card-content">
-                        <h3>Aladdin</h3>
-                        <p>Aventure</p>
-                    </div>
-                </article>
-
-                <article class="movie-card">
-                    <a href="film.html?title=Astérix%20et%20Obélix">
-                        <img src="images/asterix-et-obelix.jpg" alt="Astérix et Obélix">
-                    </a>
-
-                    <div class="movie-card-content">
-                        <h3>Astérix et Obélix</h3>
-                        <p>Comédie</p>
-                    </div>
-                </article>
-
-                <article class="movie-card">
-                    <a href="film.html?title=Batman">
-                        <img src="images/harry-potter.jpg" alt="Batman">
-                    </a>
-
-                    <div class="movie-card-content">
-                        <h3>Batman</h3>
-                        <p>Action</p>
-                    </div>
-                </article>
-            </div>
+           
+            <div id="popular-movies" class="movie-grid"></div>
         </section>
 
         <section class="movie-section">

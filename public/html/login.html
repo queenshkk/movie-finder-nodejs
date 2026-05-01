@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/main.js" defer></script>
-    <title>À propos - MovieFinder</title>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/main.js" defer></script>
+    <script type="module" src="../js/login.js" defer></script>
+    <title>Connexion - MovieFinder</title>
 </head>
 
 <body>
     <header class="header">
         <a href="index.html" class="logo">
-            <img src="images/movie-or.png" alt="MovieFinder">
+            <img src="../images/movie-or.png" alt="MovieFinder">
         </a>
 
         <nav class="menu">
@@ -43,28 +44,33 @@
                     Se connecter
                 </a>
 
-                <a href="logout.html">
+                <button id="logout-btn" type="button">
                     <i class="fa-solid fa-right-from-bracket"></i>
                     Se déconnecter
-                </a>
+                </button>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section class="page-header">
-            <h1>À propos</h1>
-            <p>Présentation du projet MovieFinder.</p>
-        </section>
+        <section class="auth-card">
+            <h1>Connexion</h1>
+            <p>Connectez-vous pour gérer vos favoris.</p>
 
-        <section class="content-card">
-            <h2>MovieFinder</h2>
+            <form id="login-form">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
 
-            <p>MovieFinder est un site qui permet de rechercher un film et de voir sur quelles plateformes il est disponible.
+                <label for="password">Mot de passe</label>
+                <input id="password" name="password" type="password" required>
+
+                <button type="submit">Se connecter</button>
+            </form>
+
+            <p id="login-feedback" class="feedback"></p>
+
+            <p class="auth-link">Pas encore de compte ? <a href="register.html">S'inscrire</a>
             </p>
-
-            <h2>Technologies utilisées</h2>
-            <p>Node.js, Express.js, SQLite, JWT, bcrypt, HTML, CSS, JavaScript Vanilla et API externe.</p>
         </section>
     </main>
 

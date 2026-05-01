@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/main.js" defer></script>
-    <script type="module" src="js/movie-detail.js" defer></script>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/main.js" defer></script>
+    <script type="module" src="../js/movie-detail.js" defer></script>
     <title>Détail du film - MovieFinder</title>
 </head>
 
 <body>
     <header class="header">
         <a href="index.html" class="logo">
-            <img src="images/movie-or.png" alt="MovieFinder">
+            <img src="../images/movie-or.png" alt="MovieFinder">
         </a>
 
         <nav class="menu">
@@ -44,10 +44,10 @@
                     Se connecter
                 </a>
 
-                <a href="logout.html">
+                <button id="logout-btn" type="button">
                     <i class="fa-solid fa-right-from-bracket"></i>
                     Se déconnecter
-                </a>
+                </button>
             </div>
         </div>
     </header>
@@ -55,7 +55,7 @@
     <main class="container">
         <section class="detail-layout">
             <div class="poster-box">
-                <img id="movie-image" src="images/aladdin.jpg" alt="Affiche du film">
+                <img id="movie-image" alt="Affiche du film">
 
                 <button id="favorite-btn" class="primary-btn" type="button">
                     <i class="fa-solid fa-heart"></i>

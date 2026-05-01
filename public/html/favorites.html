@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/main.js" defer></script>
-    <script type="module" src="js/register.js" defer></script>
-    <title>Inscription - MovieFinder</title>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/main.js" defer></script>
+    <script type="module" src="../js/favorites.js" defer></script>
+    <title>Favoris - MovieFinder</title>
 </head>
 
 <body>
     <header class="header">
         <a href="index.html" class="logo">
-            <img src="images/movie-or.png" alt="MovieFinder">
+            <img src="../images/movie-or.png" alt="MovieFinder">
         </a>
 
         <nav class="menu">
@@ -21,7 +21,7 @@
                 <i class="fa-solid fa-house"></i>
                 Accueil
             </a>
-            <a href="all-films.html">Tous les films</a>
+            <a href="films.html">Tous les films</a>
             <a href="plateformes.html">Plateformes</a>
             <a href="favorites.html">Favoris</a>
             <a href="about.html">À propos</a>
@@ -44,38 +44,27 @@
                     Se connecter
                 </a>
 
-                <a href="logout.html">
+                <button id="logout-btn" type="button">
                     <i class="fa-solid fa-right-from-bracket"></i>
                     Se déconnecter
-                </a>
+                </button>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section class="auth-card">
-            <h1>Inscription</h1>
-            <p>Créez un compte pour sauvegarder vos films favoris.</p>
+        <section class="page-header">
+            <h1>Mes favoris</h1>
+            <p>Retrouvez les films que vous avez ajoutés à votre liste.</p>
+        </section>
 
-            <form id="register-form">
-                <label for="name">Nom</label>
-                <input id="name" name="name" type="text" required>
+        <section class="movie-section">
+            <div class="section-title">
+                <h2>Films enregistrés</h2>
+                <p>Vous pouvez modifier un commentaire ou supprimer un favori.</p>
+            </div>
 
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required>
-
-                <label for="password">Mot de passe</label>
-                <input id="password" name="password" type="password" required>
-
-                <button type="submit">
-                    S'inscrire
-                </button>
-            </form>
-
-            <p id="register-feedback" class="feedback"></p>
-
-            <p class="auth-link">Déjà un compte ? <a href="login.html">Se connecter</a>
-            </p>
+            <div id="favorites-list" class="movie-grid"></div>
         </section>
     </main>
 
