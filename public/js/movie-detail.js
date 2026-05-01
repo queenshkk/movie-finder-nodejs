@@ -63,7 +63,7 @@ const loadMovie = async () => {
     }
 
     try {
-        const response = await fetch("/api/motn", {
+        const response = await fetch("/api/movies/motn", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

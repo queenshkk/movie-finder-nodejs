@@ -32,7 +32,7 @@ const searchMovies = async () => {
     resultsContainer.innerHTML = "";
 
     try {
-        const response = await fetch("/api/motn", {
+        const response = await fetch("/api/movies/motn", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
