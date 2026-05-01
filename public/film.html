@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/movie-detail.js" defer></script>
+    <title>Détail du film - MovieFinder</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/movie-or.png" alt="MovieFinder">
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Accueil
+            </a>
+            <a href="all-films.html">Tous les films</a>
+            <a href="plateformes.html">Plateformes</a>
+            <a href="favorites.html">Favoris</a>
+            <a href="about.html">À propos</a>
+        </nav>
+
+        <div class="auth-dropdown">
+            <button id="auth-btn" class="connect" type="button">
+                <i class="fa-solid fa-user"></i>
+                S'identifier
+            </button>
+
+            <div id="auth-menu" class="auth-menu">
+                <a href="register.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    S'inscrire
+                </a>
+
+                <a href="login.html">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Se connecter
+                </a>
+
+                <a href="logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Se déconnecter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="detail-layout">
+            <div class="poster-box">
+                <img id="movie-image" src="images/aladdin.jpg" alt="Affiche du film">
+
+                <button id="favorite-btn" class="primary-btn" type="button">
+                    <i class="fa-solid fa-heart"></i>
+                    Ajouter aux favoris
+                </button>
+            </div>
+
+            <div class="movie-info">
+                <h1 id="movie-title">Chargement...</h1>
+
+                <div class="info-grid">
+                    <div>
+                        <h3>Année</h3>
+                        <p id="movie-year">...</p>
+                    </div>
+
+                    <div>
+                        <h3>Durée</h3>
+                        <p id="movie-duration">...</p>
+                    </div>
+
+                    <div>
+                        <h3>Note</h3>
+                        <p id="movie-rating">...</p>
+                    </div>
+
+                    <div>
+                        <h3>Genres</h3>
+                        <p id="movie-genres">...</p>
+                    </div>
+                </div>
+
+                <h2>Résumé</h2>
+                <p id="movie-overview">...</p>
+
+                <h2>Où regarder ?</h2>
+                <div id="movie-platforms" class="platform-list">
+                    Chargement...
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projet réalisé par : Nathan De Witte et Nguyen Quynh</p>
+        <p>Technologies : Node.js, Express, HTML, CSS et JavaScript Vanilla</p>
+    </footer>
+</body>
+</html>

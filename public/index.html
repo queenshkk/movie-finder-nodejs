@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
+    <title>MovieFinder - Accueil</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/movie-or.png" alt="MovieFinder">
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Accueil
+            </a>
+
+            <a href="all-films.html">Tous les films</a>
+
+            <a href="plateformes.html">Plateformes</a>
+
+            <a href="favorites.html">Favoris</a>
+
+            <a href="about.html">À propos</a>
+        </nav>
+
+        <div class="auth-dropdown">
+            <button id="auth-btn" class="connect" type="button">
+                <i class="fa-solid fa-user"></i>
+                S'identifier
+            </button>
+
+            <div id="auth-menu" class="auth-menu">
+                <a href="register.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    S'inscrire
+                </a>
+
+                <a href="login.html">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Se connecter
+                </a>
+
+                <a href="logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Se déconnecter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <p class="badge">
+                <i class="fa-solid fa-film"></i>
+                Recherche de films et plateformes
+            </p>
+
+            <h1>Trouvez où regarder vos films préférés</h1>
+
+            <p>Recherchez un film et découvrez ses informations, sa note, sa durée et les plateformes disponibles.</p>
+
+            <div class="search-box">
+                <input id="search-input" type="text" placeholder="Tapez le nom d'un film...">
+
+                <button id="search-btn" type="button" aria-label="Rechercher">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="quick-actions">
+            <article>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>Recherche rapide</h3>
+                <p>Entrez le nom d’un film pour afficher ses informations et ses plateformes de streaming.</p>
+            </article>
+
+            <article>
+                <i class="fa-solid fa-tv"></i>
+                <h3>Plateformes</h3>
+                <p>Découvrez si un film est disponible sur Netflix, Prime Video, Apple TV ou d’autres services.</p>
+            </article>
+
+            <article>
+                <i class="fa-solid fa-heart"></i>
+                <h3>Favoris</h3>
+                <p>Connectez-vous pour ajouter des films à vos favoris et les retrouver facilement.</p>
+            </article>
+        </section>
+
+        <section class="movie-section">
+            <div class="section-title">
+                <h2>Films populaires</h2>
+                <p>Une sélection de films à découvrir sur différentes plateformes.</p> 
+           </div>
+
+            <div class="movie-grid">
+                <article class="movie-card">
+                    <a href="film.html?title=Harry%20Potter">
+                        <img src="images/harry-potter.jpg" alt="Harry Potter">
+                    </a>
+
+                    <div class="movie-card-content">
+                        <h3>Harry Potter</h3>
+                        <p>Fantastique</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <a href="film.html?title=Aladdin">
+                        <img src="images/aladdin.jpg" alt="Aladdin">
+                    </a>
+
+                    <div class="movie-card-content">
+                        <h3>Aladdin</h3>
+                        <p>Aventure</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <a href="film.html?title=Astérix%20et%20Obélix">
+                        <img src="images/asterix-et-obelix.jpg" alt="Astérix et Obélix">
+                    </a>
+
+                    <div class="movie-card-content">
+                        <h3>Astérix et Obélix</h3>
+                        <p>Comédie</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <a href="film.html?title=Batman">
+                        <img src="images/harry-potter.jpg" alt="Batman">
+                    </a>
+
+                    <div class="movie-card-content">
+                        <h3>Batman</h3>
+                        <p>Action</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="movie-section">
+            <div class="section-title">
+                <h2>Comment utiliser MovieFinder ?</h2>
+                <p>Le fonctionnement du site en trois étapes simples.</p>
+            </div>
+
+            <div class="quick-actions">
+                <article>
+                    <h3>1. Rechercher</h3>
+                    <p>Tapez le nom d’un film dans la barre de recherche.</p>
+                </article>
+
+                <article>
+                    <h3>2. Consulter</h3>
+                    <p>Consultez la fiche du film avec son résumé, sa durée, sa note et ses genres.</p>
+                </article>
+
+                <article>
+                    <h3>3. Regarder</h3>
+                    <p>Vérifiez sur quelles plateformes le film est disponible.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projet réalisé par : Nathan De Witte et Nguyen Quynh</p>
+        <p>Technologies : Node.js, Express, HTML, CSS et JavaScript Vanilla</p>
+    </footer>
+</body>
+</html>

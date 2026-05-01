@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/favorites.js" defer></script>
+    <title>Favoris - MovieFinder</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/movie-or.png" alt="MovieFinder">
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Accueil
+            </a>
+            <a href="films.html">Tous les films</a>
+            <a href="plateformes.html">Plateformes</a>
+            <a href="favorites.html">Favoris</a>
+            <a href="about.html">À propos</a>
+        </nav>
+
+        <div class="auth-dropdown">
+            <button id="auth-btn" class="connect" type="button">
+                <i class="fa-solid fa-user"></i>
+                S'identifier
+            </button>
+
+            <div id="auth-menu" class="auth-menu">
+                <a href="register.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    S'inscrire
+                </a>
+
+                <a href="login.html">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Se connecter
+                </a>
+
+                <a href="logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Se déconnecter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Mes favoris</h1>
+            <p>Retrouvez les films que vous avez ajoutés à votre liste.</p>
+        </section>
+
+        <section class="movie-section">
+            <div class="section-title">
+                <h2>Films enregistrés</h2>
+                <p>Vous pouvez modifier un commentaire ou supprimer un favori.</p>
+            </div>
+
+            <div id="favorites-list" class="movie-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projet réalisé par : Nathan De Witte et Nguyen Quynh</p>
+        <p>Technologies : Node.js, Express, HTML, CSS et JavaScript Vanilla</p>
+    </footer>
+</body>
+</html>

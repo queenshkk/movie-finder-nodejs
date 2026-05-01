@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #0b0d15;
+  font-family: 'Nunito', sans-serif;
+  color: #f9fafb;
+  line-height: 1.6;
+}
+
+.auth-page {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #27242a;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.auth-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.retour {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.field input {
+  padding: 0.9rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: rgb(249, 188, 80);
+    color: black;
+}
+
+.auth-link {
+  margin-top: 1rem;
+  text-align: center;
+  color: #cbd5e1;
+}
+
+.auth-link a {
+  color: #f9fafb;
+  text-decoration: underline;
+}
+
+.feedback {
+  margin-top: 1rem;
+  text-align: center;
+  color: #fca5a5;
+}
+
+.feedback.success {
+    color: green;
+}
+
+.feedback.error {
+    color: red;
+}
+
+.feedback.info {
+    color: #333;
+}

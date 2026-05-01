@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/plateformes.js" defer></script>
+    <title>Plateformes - MovieFinder</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/movie-or.png" alt="MovieFinder">
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Accueil
+            </a>
+            <a href="all-films.html">Tous les films</a>
+            <a href="plateformes.html">Plateformes</a>
+            <a href="favorites.html">Favoris</a>
+            <a href="about.html">À propos</a>
+        </nav>
+
+        <div class="auth-dropdown">
+            <button id="auth-btn" class="connect" type="button">
+                <i class="fa-solid fa-user"></i>
+                S'identifier
+            </button>
+
+            <div id="auth-menu" class="auth-menu">
+                <a href="register.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    S'inscrire
+                </a>
+
+                <a href="login.html">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Se connecter
+                </a>
+
+                <a href="logout.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Se déconnecter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Plateformes</h1>
+            <p>Sélectionnez une plateforme pour rechercher des films disponibles dessus.</p>
+        </section>
+
+        <section class="movie-section">
+            <div class="section-title">
+                <h2>Choisir une plateforme</h2>
+                <p>Cette page permet de filtrer les films par service de streaming.</p>
+            </div>
+
+            <div class="genre-list">
+                <button class="genre-btn platform-btn" type="button" data-platform="netflix">Netflix</button>
+                <button class="genre-btn platform-btn" type="button" data-platform="prime">Prime Video</button>
+                <button class="genre-btn platform-btn" type="button" data-platform="disney">Disney+</button>
+                <button class="genre-btn platform-btn" type="button" data-platform="apple">Apple TV</button>
+                <button class="genre-btn platform-btn" type="button" data-platform="crave">Crave</button>
+            </div>
+        </section>
+
+        <section class="movie-section">
+            <div class="section-title">
+                <h2 id="platform-title">Films par plateforme</h2>
+                <p id="platform-feedback">Sélectionnez une plateforme.</p>
+            </div>
+
+            <div id="platform-results" class="movie-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projet réalisé par : Nathan De Witte et Nguyen Quynh</p>
+        <p>Technologies : Node.js, Express, HTML, CSS et JavaScript Vanilla</p>
+    </footer>
+</body>
+</html>
